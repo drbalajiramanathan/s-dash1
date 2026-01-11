@@ -1,0 +1,16 @@
+{
+    "hosting": {
+        "public": "dashboard/dist",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "/dash1/**",
+                "destination": "/dash1/index.html"
+            }
+        ]
+    }
+}
