@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 
-const DATA_PATH = '/data/cattle_dashboard_5cows_varied_health.csv';
+const DATA_PATH = import.meta.env.BASE_URL + 'data/cattle_dashboard_5cows_varied_health.csv';
 
 export function useCowData() {
     const [data, setData] = useState([]);
