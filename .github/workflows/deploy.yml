@@ -33,7 +33,7 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting --project mooflux
+          args: deploy --only hosting --project mooflux-f0a46
         env:
           GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MOOFLUX }}
           # Project ID is optional if it's in .firebaserc, but good to be safe if missing.
