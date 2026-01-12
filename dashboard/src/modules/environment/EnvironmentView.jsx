@@ -409,10 +409,7 @@ export default function EnvironmentView({ selectedCow, onSelectCow }) {
             </div>
 
             <div className="flex-1 bg-white rounded-xl shadow-sm border border-slate-100 p-4 relative overflow-hidden">
-                {/* Fake Map Background */}
-                <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/aerial-view-green-pasture-land_1127-2933.jpg')] bg-cover bg-center opacity-30 pointer-events-none"></div>
-                {/* Radial Gradient overlay to make points pop */}
-                <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/20 pointer-events-none"></div>
+                {/* Background removed for clean white look */}
 
                 <div className="relative z-10 h-full">
                     {chartData ? <Scatter options={options} data={chartData} plugins={[farmMapPlugin, cowLabelPlugin]} /> : <div className="flex items-center justify-center h-full text-slate-400">Waiting for GPS signal...</div>}
